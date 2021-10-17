@@ -14,7 +14,7 @@ func main() {
 
 	e.GET("/ping", ping)
 
-	e.Logger.Fatal(e.Start(":8080"))
+	e.Logger.Fatal(e.Start(":3000"))
 }
 
 func hello(c echo.Context) error {
