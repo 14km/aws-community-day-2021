@@ -36,9 +36,15 @@ env:
   AWS_REGION: ap-northeast-2
   # set this to your Amazon ECR repository name
   ECR_REPOSITORY: aws-community-day-2021
-  ECS_SERVICE: MY_ECS_SERVICE                 # set this to your Amazon ECS service name
-  ECS_CLUSTER: MY_ECS_CLUSTER                 # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: MY_ECS_TASK_DEFINITION # set this to the path to your Amazon ECS task definition
+
+  # set this to your Amazon ECS service name
+  ECS_SERVICE: aws-community-day-service
+
+  # set this to your Amazon ECS cluster name
+  ECS_CLUSTER: aws-community-day
+
+  # set this to the path to your Amazon ECS task definition
+  ECS_TASK_DEFINITION: .aws/task-definition.json
                                                # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: MY_CONTAINER_NAME           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
